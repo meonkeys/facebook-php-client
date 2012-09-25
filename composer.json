@@ -1,0 +1,10 @@
+{
+    "name": "meonkeys/facebook-php-client",
+    "description": "Stand-alone command-line PHP facebook client",
+    "license": "AGPL-3.0+",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/console": "2.1.*",
+        "facebook/php-sdk": "v3.2.0"
+    }
+}

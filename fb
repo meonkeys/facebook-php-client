@@ -1,0 +1,14 @@
+#!/usr/bin/php
+<?php
+assert_options(ASSERT_BAIL, true);
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+
+require_once 'vendor/autoload.php';
+require_once 'InfoCommand.php';
+
+use Symfony\Component\Console\Application;
+
+$console = new Application('Facebook API Tool', '0.1');
+$console->add(new InfoCommand());
+$console->run();
