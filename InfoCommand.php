@@ -14,14 +14,12 @@ class InfoCommand extends Command {
             ->setDescription('Return basic Facebook user information.')
             ->addArgument('appid', InputArgument::REQUIRED, 'Application ID.')
             ->addArgument('appsecret', InputArgument::REQUIRED, 'Application secret.')
-            ->addArgument('facebookid', InputArgument::REQUIRED, 'Facebook ID.')
             ->addArgument('token', InputArgument::REQUIRED, 'Facebook access token.');
   }
 
   protected function execute(InputInterface $input, OutputInterface $output) {
     $appId = $input->getArgument('appid');
     $appSecret = $input->getArgument('appsecret');
-    $facebookId = $input->getArgument('facebookid');
     $accessToken = $input->getArgument('token');
     $facebook = new Facebook(array(
         'appId' => $appId,
