@@ -4,8 +4,7 @@ assert_options(ASSERT_BAIL, true);
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-require_once 'vendor/autoload.php';
-require_once 'InfoCommand.php';
+require_once 'autoload.php';
 
 use Symfony\Component\Console\Application;
 
